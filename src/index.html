@@ -4,14 +4,185 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+    <!--     <h1>HTML Form</h1>
+    <script type="text/javascript" src="./main.js"></script> -->
+
+    <header>
+    </header>
+            
+    <main>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+        <!-- First block -->
+        <fieldset class="block1">
+          <legend>Personal information</legend>
+
+          <label class="label_style_firstBlock">Surname: 
+            <input 
+            type="text" 
+            name="Surname" 
+            required 
+            >
+          </label> 
+            
+          <label class="label_style_firstBlock">Name: 
+            <input 
+            type="text" 
+            name="Name" 
+            required 
+            >
+          </label>
+            
+          <label class="label_style_firstBlock">How old are You?
+            <input 
+            type="number" 
+            name="Age" 
+            min="1" 
+            max="100" 
+            value="12" 
+            required 
+            > 
+          </label>
+          
+          <label class="label_style_firstBlock"> Full date of birth:
+            <input 
+            type="date" 
+            name="Data" 
+            min="01.01.1900" 
+            max="01.01.2222" 
+            required 
+            >
+          </label>
+            
+          <label class="label_style_lastInput">I accept the term of the agreement
+            <input 
+            type="checkbox" 
+            name="rememberMe" 
+            >
+          </label>
+        </fieldset>
+        
+        <!-- Second block -->
+        <fieldset class="block2">
+          <legend>Registration</legend>
+          <label class="label_style_firstBlock">E-mail:
+            <input 
+            type="email" 
+            name="e-mail" 
+            placeholder="email@example.com" 
+            min="10" 
+            max="30" 
+            required
+            >
+          </label>
+            
+          <label class="label_style_lastInput">Password:
+            <input 
+            type="password" 
+            name="password" 
+            min="10" 
+            max="40" 
+            required
+            >
+          </label>
+        </fieldset>
+        
+        <!-- Third block -->
+        <fieldset class="block3">
+          <legend>An interesting fact about you!</legend>
+
+          <label class="label_style_secondBlock"> Do you love cats?
+            <input 
+              type="radio" 
+              name="cats"
+            > Yes
+
+            <input 
+              type="radio" 
+              name="cats" 
+            > No 
+          </label>
+
+          <label class="label_style_secondBlock"> What is your favorite color?
+            <input 
+              type="color" 
+              name="color"
+            > 
+          </label> 
+
+          <label class="label_style_secondBlock">What time do you go to bed?
+            <input 
+              type="time" 
+              name="GoToBed" 
+              step="10" 
+              min="00:01" 
+              max="23:59"
+              class="input_style"
+            > 
+          </label> 
+            
+          <label class="label_style_secondBlock"> What are your favorite brand of cars? 
+            <select name="cars" multiple >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+              <option value="pull"></option>
+            </select> 
+          </label>
+          
+          <label class="label_style_lastInput">How do you rate our work?
+            <input 
+              type="range" 
+              name="range"
+              value="0" 
+              required
+              class="input_style"
+            >
+          </label> 
+
+        </fieldset>
+         
+        <!-- Fourth block -->
+        <fieldset class="block4">
+          <legend> Additional info:</legend>
+
+          <label class="label-style_secondBlock">Comments:
+            <textarea 
+              name="textarea" 
+              autocomplete="off" 
+              maxlength="80" 
+            >
+            </textarea> <br>
+          </label>
+
+            
+          <label class="label-style_lastInput2">Would you recommend us?
+            <select 
+              name="recommend"
+            >
+              <option value="yes" selected > yes</option>
+              <option value="no"> no </option>
+            </select>
+          </label>
+        </fieldset>
+        
+        <!-- Submit -->
+        <div class="lastBlock">
+          <label class="label-style">
+            <button type="submit">Submit</button>
+          </label>
+        </div>
+      </form>
+    </main>
+            
+    <footer>
+    </footer>
   </body>
 </html>

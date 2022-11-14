@@ -1,1 +1,53 @@
-/* styles go here */
+.label_style {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.label_style_firstBlock {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.label_style_secondBlock {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.label_style_lastInput {
+  display: block;
+  margin-top: 10px;
+}
+
+.label-style_lastInput2 {
+  display: block;
+  margin-top: 10px;
+}
+
+.block1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.block2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.block3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.block4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.lastBlock {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
